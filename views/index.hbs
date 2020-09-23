@@ -1,13 +1,15 @@
 <div class="select-pictures">
   <form enctype="multipart/form-data" id="send-image" action="/" method="post">
     <input type="file" id="file" name="file"/>
-    <button type="submit" id="start">Начать обработку</button>
-
+    <button type="submit" id="start">Распознать текст</button>
   </form>
 </div>
-<div id="recognized-text">
-  <div id="text-container">
+
+<div class="text-wrapper">
+  <select name="voices" class="voices"></select>
+  <button class="play hidden">Озвучить</button>
+  <button class="stop hidden">Остановить</button>
+  <div>
+    <textarea name="text" id="text" class="text"></textarea>
   </div>
-  <button id="read-btn">Читай</button>
-  <button id="cancel-read">Стоп</button>
 </div>

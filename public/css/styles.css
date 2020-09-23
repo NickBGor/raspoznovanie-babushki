@@ -9,14 +9,26 @@
 
 #log,
 #text-container {
-  min-height: 200px; 
+  min-height: 200px;
   border: 1px solid #eee;
 }
 
-#recognized-text {
-  width: 65%;
-  margin: 40px 0;
+
+.text-wrapper {
+  margin-top: 20px;
 }
 
+.text {
+  margin-top: 20px;
+  width: 400px;
+  min-height: 200px;
+  resize: none;
+}
 
+.hidden {
+  display: none;
+}
 
+.visible {
+  display: inherit;
+}
